@@ -1,0 +1,22 @@
+{
+  "name": "reel-edicion-overlay",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Capa de pulido (subtítulos interactivos, títulos, overlays) sobre video grabado",
+  "scripts": {
+    "preview": "remotion studio",
+    "render": "remotion render src/index.ts ReelEdit out/reel_final.mp4 --concurrency=1",
+    "still": "remotion still src/index.ts ReelEdit out/portada.png --frame=30",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.5.4"
+  }
+}
